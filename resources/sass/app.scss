@@ -1,0 +1,23 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+$base-color: #398F1D;
+$global-row-height: 3em;
+$page-bg-color: 	#70A682;
+$list-bg-color:  #85B394;
+$form-bg-color:   #85B394;
+$panel-body-font-size: 20;
+@import 'sencha-touch/default';
+@import 'sencha-touch/default/all';
+
+
+// Custom code goes here..
+@import 'stylesheets/main';
+
+// Examples of using the icon mixin:
+@include icon('user');
+@include icon-font('Pictos',
+inline-font-files('pictos/pictos-web.woff', woff, 'pictos/pictos-web.ttf', truetype,'pictos/pictos-web.svg', svg));
+@include icon('check');
+@include icon('maps');
+@include icon('video');
